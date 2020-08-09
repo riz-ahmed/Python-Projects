@@ -1,6 +1,7 @@
 import requests
 import json
 
+# function that retrives a list of similar movies from TastDive API
 def get_movies_from_tastedive(req_movie):
     base_url = "https://tastedive.com/api/similar"
     query_params = {}
@@ -12,12 +13,15 @@ def get_movies_from_tastedive(req_movie):
     py_obj = json.loads(resp_obj.text)
     return py_obj
 
-req_str = get_movies_from_tastedive("cast away")
-rec_movies = []
-des_dict = req_str['Similar']['Results']
-for item in des_dict:
-    #print(item['Name'])
-    rec_movies.append(item['Name'])
+# function that extracts a list of recommended movies
+def extract_movie_titles(py_obj):
+    ext_movies = []
+    des_dict = py_obj['Similar']['Results']
+    for item in des_dict:
+        #print(item['Name'])
+        ext_movies.append(item['Name'])
+
+    return ext_movies
 
 print("Recommended Movies: ")
-print(rec_movies)
+print(extract_movie_titles(get_movies_from_tastedive("cast away")))
