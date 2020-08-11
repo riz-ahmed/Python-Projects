@@ -1,5 +1,6 @@
 import requests
 import json
+import import_with_request_caching
 
 # function that retrives a list of similar movies from TastDive API
 def get_movies_from_tastedive(req_movie):
