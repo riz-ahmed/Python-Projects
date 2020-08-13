@@ -1,0 +1,4 @@
+{
+  "https://tastedive.com/api/similarlimit-5_q-shutter island_type-movies": "{\"Similar\": {\"Info\": [{\"Name\": \"Shutter Island\", \"Type\": \"movie\"}], \"Results\": [{\"Name\": \"The Prestige\", \"Type\": \"movie\"}, {\"Name\": \"Memento\", \"Type\": \"movie\"}, {\"Name\": \"The Departed\", \"Type\": \"movie\"}, {\"Name\": \"Se7en\", \"Type\": \"movie\"}, {\"Name\": \"V For Vendetta\", \"Type\": \"movie\"}]}}",
+  "https://tastedive.com/api/similarlimit-5_q-21_type-movies": "{\"Similar\": {\"Info\": [{\"Name\": \"21\", \"Type\": \"movie\"}], \"Results\": [{\"Name\": \"Seven Pounds\", \"Type\": \"movie\"}, {\"Name\": \"Limitless\", \"Type\": \"movie\"}, {\"Name\": \"The Italian Job\", \"Type\": \"movie\"}, {\"Name\": \"The Next Three Days\", \"Type\": \"movie\"}, {\"Name\": \"The Pursuit Of Happyness\", \"Type\": \"movie\"}]}}"
+}

@@ -9,7 +9,8 @@ def get_movies_from_tastedive(req_movie):
     query_params['q'] = req_movie
     query_params['type'] = 'movies'
     query_params['limit'] = 5
-    resp_obj = requests.get(base_url, query_params)
+    #resp_obj = requests.get(base_url, query_params)
+    resp_obj = import_with_request_caching.get(base_url, query_params, permanent_cache_file="Permanent_Cache.txt")
     print(resp_obj.url) # prints movie url
     py_obj = json.loads(resp_obj.text)
     return py_obj
